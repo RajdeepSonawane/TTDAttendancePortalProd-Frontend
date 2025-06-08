@@ -14,7 +14,7 @@ import AddLocation from "./Components/AddLocation";
 import CheckOutDashboard from "./Components/CheckOut";
 import CheckOutPreviousDashboard from "./Components/CheckOutPrevious";
 
-//
+
 
 const App: React.FC = () => {
   const { isLoggedIn } = useAuth();
