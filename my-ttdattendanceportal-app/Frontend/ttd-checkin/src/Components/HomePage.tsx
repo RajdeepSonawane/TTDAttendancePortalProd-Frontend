@@ -87,7 +87,7 @@ const HomePageDashboard=()=> {
     <Grid2 container spacing={2}>
           <Grid2 size={{ xs: 12, md: 3}}>
             
-              <Paper sx={{ p: 2 }}>
+              <Paper sx={{ p: 1 }}>
                 <Avatar  sx={{ width: 100, height: 130, mx: 'auto', mb: 2 }}/>
                 <Typography variant="h6" color="primary">
                    <strong>{employees?.firstName+" "+employees?.middleName+" "+employees?.lastName} </strong>
@@ -127,8 +127,8 @@ const HomePageDashboard=()=> {
                 </Typography>
                 <Paper elevation={5}>
                 <Typography variant="body1" align="center" sx={{ fontStyle: 'italic' }} >
-                  युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु। <br />
-                  युक्तस्वप्नावबोधस्य योगो भवति दुःखहा॥
+                  सततं प्रयत्नशीलः सदा विजयशाली भवति। <br />
+                  तेजस्वी कार्यकर्ता भवतः कार्ये सफलता निश्चितम्॥
                 </Typography>
                 </Paper>
                 <Paper sx={{ p: 1, mb:1 ,mt:1 }} elevation={5} >

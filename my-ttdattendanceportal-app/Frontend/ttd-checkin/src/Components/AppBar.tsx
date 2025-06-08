@@ -147,8 +147,8 @@ const handleEmployeeClick = (event: React.MouseEvent<HTMLElement>) => {
         <Typography variant="body1">
           Welcome, <strong>{user?.firstName + " " + user?.lastName} </strong>
         </Typography>
-        <Typography variant="body2">Login: 30 May 2025 03:08:52 PM</Typography>
-        <Typography variant="body2">Last Login: 30 May 2025 01:27:46 PM</Typography>
+        <Typography variant="body2">Login: 08 June 2025 11:08:52 AM</Typography>
+        <Typography variant="body2">Last Login: 08 June 2025 08:08:52 AM</Typography>
       </Box>
 
       <Box>

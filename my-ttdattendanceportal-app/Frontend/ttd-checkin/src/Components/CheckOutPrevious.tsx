@@ -374,16 +374,20 @@ const navigate = useNavigate();
             <Typography variant="h4" sx={{ textDecoration: 'underline',color: 'darkblue'}}> {minutes.toString().padStart(2, '0')}:{seconds.toString().padStart(2, '0')}</Typography>
             <Typography variant="h4" sx={{ color: 'darkblue' }} fontWeight="bold">{period}</Typography>
             <Box mt={2}>
-              {UserAttendance?.checkInDate &&
-                  <Typography>
-                    <strong>Check-In Time:</strong> {new Date(UserAttendance.checkInDate).toLocaleTimeString([], {
-                      hour: '2-digit',
-                      minute: '2-digit',
-                      hour12: true
-                    })}
-                  </Typography>
-                }
-  
+              {UserAttendance?.checkInDate && (
+                    <>
+                      <Typography>
+                        <strong>Check-In Date:</strong> {new Date(UserAttendance.checkInDate).toLocaleDateString()}
+                      </Typography>
+                      <Typography>
+                        <strong>Check-In Time:</strong> {new Date(UserAttendance.checkInDate).toLocaleTimeString([], {
+                          hour: '2-digit',
+                          minute: '2-digit',
+                          hour12: true
+                        })}
+                      </Typography>
+                    </>
+                  )}
             </Box>
           </Paper>
         </Grid2>
