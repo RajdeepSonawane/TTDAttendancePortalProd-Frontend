@@ -47,7 +47,7 @@ const CheckInDashboard = () => {
 
 const user: User | null = JSON.parse(localStorage.getItem("user") || "null");
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
- const [employees, setEmployees] = useState<Employee|null>(null);
+const [employees, setEmployees] = useState<Employee|null>(null);
 const [locations, setLocations] = useState<Location[]>([]);
 const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
 const navigate = useNavigate();
@@ -225,7 +225,7 @@ const navigate = useNavigate();
         borderRadius: 1,
         padding: 2,
         backgroundColor: '#fff',      
- }}>
+        }}>
             <Typography variant="body1" gutterBottom color="primary">CheckIn-CheckOut</Typography>
              <Divider></Divider>
             <form onSubmit={formik.handleSubmit} >
@@ -246,10 +246,10 @@ const navigate = useNavigate();
            
 
         <Autocomplete
-                  options={locations} 
-                  getOptionLabel={(option) => option.name}
-                  value={selectedLocation} 
-                  onChange={(_e, newValue) => {
+            options={locations} 
+            getOptionLabel={(option) => option.name}
+            value={selectedLocation} 
+            onChange={(_e, newValue) => {
                     setSelectedLocation(newValue); // Store only the name for display
                     formik.setFieldValue("checkInLocation", newValue?.id || 0);
                     

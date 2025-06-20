@@ -10,7 +10,7 @@ import EmployeeList from "./Components/EmployeeList";
 import CheckInDashboard from "./Components/CheckIn";
 import AppBarHeader from "./Components/AppBar";
 import AddLocation from "./Components/AddLocation";
-
+import AttendanceListDashboard from "./Components/ViewAttendance";
 import CheckOutDashboard from "./Components/CheckOut";
 import CheckOutPreviousDashboard from "./Components/CheckOutPrevious";
 
@@ -68,6 +68,12 @@ const App: React.FC = () => {
             path="/checkout"
             element={
               isLoggedIn ? <CheckOutDashboard /> : <Navigate to="/login" />
+            }
+          />
+          <Route
+            path="/attendance-view"
+            element={
+              isLoggedIn ? < AttendanceListDashboard/> : <Navigate to="/login" />
             }
           />
            <Route
