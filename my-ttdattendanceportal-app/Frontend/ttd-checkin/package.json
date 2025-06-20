@@ -17,6 +17,7 @@
     "@mui/system": "^6.4.3",
     "@mui/x-date-pickers": "^8.5.1",
     "axios": "^1.9.0",
+    "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
     "emotions": "^0.0.1",
     "formik": "^2.4.6",

@@ -149,7 +149,7 @@ const HomePageDashboard=()=> {
           
           {[
             { label: 'CheckIn-CheckOut', icon: <LockIcon/> ,route: '/checkin' },
-            { label: 'Attendance View', icon: <WorkHistoryIcon />,route: '/checkIn-checkOut' },
+            { label: 'Attendance View', icon: <WorkHistoryIcon />,route: '/attendance-view' },
             { label: 'Annual Holidays', icon: <CalendarMonthIcon />,route: '/checkIn-checkOut' },
             { label: 'Salary Slip', icon: <ReceiptIcon />,route: '/checkIn-checkOut' },
             { label: 'Change Password', icon: <VpnKeyIcon />,route: '/checkIn-checkOut' },
